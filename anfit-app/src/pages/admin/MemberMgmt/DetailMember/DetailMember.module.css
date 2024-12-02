@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+.member_detail_top {
+    padding: 1rem 1.6rem 2rem;
+}
+.info_top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+.name {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.detail_tab_title {
+    margin-top: 2rem;
+}
+.class_list {
+    margin-top: 0.5rem;
+    border-bottom: 0.1rem solid var(--border-color);
+}
+.class_list li {
+    padding: 1rem;
+    border-top: 0.1rem solid var(--border-color);
+}
+.class_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+.class_state {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.class_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.class_info_detail {
+    display: flex;
+}
+.use_pass_history {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 0.1rem dashed var(--text-gray);
+    color: var(--text-gray);
+    line-height: 1.7;
+}
+
+.member_detail_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}

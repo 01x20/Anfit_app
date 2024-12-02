@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.detail_top {
+    padding: 1rem 1.6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.detail_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+.schedule_info {
+    font-size: 1.6rem;
+}
+.class_limit {
+    display: flex;
+    align-items: center;
+}
+.icon {
+    font-size: 1.5rem;
+    margin-right: 0.4rem;
+}
+.detail_bottom {
+    padding: 2rem 1.6rem 6rem;
+}
+.button_box {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+/* 검색 모달 */
+.check_list {
+    margin-top: 2rem;
+    padding-bottom: 8rem;
+    overflow-y: auto;
+    max-height: calc(100vh - 26rem);
+}

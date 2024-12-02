@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+.class_pass {
+    border-radius: 1.2rem;
+    background: linear-gradient(45deg, #5D9AF7, #8CE0E1);
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.class_pass::before {
+    position: absolute;
+    content: '';
+    width: calc(100% - 0.2rem);
+    height: calc(100% - 0.2rem);
+    background-image: linear-gradient(45deg, #DDEBFD, #E3F8F8);
+    z-index: -1;
+    left: 0.1rem;
+    top: 0.1rem;
+    border-radius: 1.1rem;
+}
+
+.class_pass.group_pass {
+    background: linear-gradient(45deg, #D97B92, #F3DFB4);
+}
+.class_pass.group_pass::before {
+    background-image: linear-gradient(45deg, #FDDEDE, #F8F1E3);
+}
+
+.pass_icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    background: url('../images/icons/icon_class_pass.png') 50% 50% no-repeat;
+    background-size: 100%;
+    margin-right: 0.4rem;
+}
+
+.pass_info {
+    width: calc(100% - 3.2rem);
+}
+.info_top, .info_bottom {
+    display: flex;
+    align-items: center;
+    color: var(--text-gray);
+}
+.info_top li, .info_bottom li {
+    position: relative;
+    padding-right: 0.8rem;
+}
+.info_top li::before, .info_bottom li::before {
+    position: absolute;
+    content: '';
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 100%;
+    background: var(--text-gray);
+    right: 0.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.info_top li:last-child, .info_bottom li:last-child {
+    padding-right: 0;
+}
+.info_top li:last-child::before, .info_bottom li:last-child::before {
+    display: none;
+}
+.pass_title {
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* 회원 상세일 때 */
+.member_detail_top, .member_detail_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.member_detail_bottom {
+    color: var(--text-gray);
+}

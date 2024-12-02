@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+:root {
+    --primary-color: #3884F5;
+    --secondary-color: #EB6695;
+    --primary-gray: #ECECEC;
+    --text-gray: #9399A1;
+    --gray-300: #B3B8C1;
+    --text-color: #2B282F;
+    --border-color: #EDF0F4;
+    --color-white: #fff;
+    --primary-bg-color: #E0EEFF;
+    --gray-bg-color: #FAFBFC;
+    --secondary-bg-color: #FFEAF1;
+}
+.col-blue {
+    color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr,
+acronym, address, big, cite, code,del, dfn, em, img, ins, kbd,
+q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl,
+dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody,
+tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section,
+summary,time, mark, audio, video, input, button, select, textarea {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Pretendard', sans-serif;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+input::-webkit-input-placeholder {
+    color: var(--text-gray);
+}
+input:-ms-input-placeholder {
+    color: var(--text-gray);
+}
+button,input {
+    border-radius: 0;
+}
+button {
+    cursor: pointer;
+}
+button, input, select {
+    vertical-align: middle;
+    outline: none;
+}
+select::-ms-expand{
+    display:none;
+}
+fieldset, img {
+    border: 0;
+}
+ol,ul {
+    list-style: none
+}
+li {
+    display: block;
+}
+address,em {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    outline: none;
+}
+iframe {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0; 
+    table-layout: fixed;
+}
+html {
+    font-size: 10px;
+    color: var(--text-color);
+    line-height: 1.5;
+    font-weight: 400;
+}
+textarea {
+    resize: none;
+    border: 1px solid var(--border-color);
+}
+body,input,select,textarea,button {
+    border: none;
+    background: none;
+    font-size: 1.4rem;
+    letter-spacing: -0.05rem;
+}
+table {
+    border: none; 
+    background: none;
+    color: var(--text-color);
+}
+
+/* dot effect common */
+.dot {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+/* dot effect common */
+input {width: auto;}
+
+select.int, input.int {
+    border: 0.1rem solid var(--border-color);
+    border-radius: 0.8rem;
+    line-height: 4rem;
+    height: 4rem;
+    padding: 0 1rem;
+}
+select.int {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: var(--color-white) url('../images/icons/icon_select_arrow.png') right 1rem center no-repeat;
+    background-size: 1.2rem;
+    padding: 0 3rem 0 1rem;
+    color: var(--text-color);
+}
+select.int.size_sm {
+    height: 2.4rem;
+    line-height: 2.4rem;
+    border-radius: 0.6rem;
+    padding: 0 3rem 0 1rem;
+}
+
+::placeholder {
+    color: var(--text-gray);
+}
+
+.contents_wrapper {
+    padding: 5rem 0 6rem;
+}
+
+.contents_bottom_line {
+    border-bottom: 0.8rem solid #F4F5F7;
+}
+
+svg {
+    color: inherit;
+}
+/* datepicker custom */
+.react-datepicker-wrapper {
+    width: 100%;
+}
+.react-datepicker-popper {
+    width: 20rem !important;
+    height: 20rem !important;
+    transform: none !important;
+    top: 5rem !important;
+}
+.react-datepicker {
+    border: none !important;
+    font-size: 1.3rem !important;
+    color: var(--text-color) !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 1.2rem !important;
+    border: 0.1rem solid var(--border-color) !important;
+    overflow: hidden;
+}
+.react-datepicker__navigation {
+    height: 2rem !important;
+    width: 2rem !important;
+}
+.react-datepicker__header {
+    border-bottom: 0 !important;
+    background-color: var(--primary-bg-color) !important;
+    padding: 1.6rem 0 0.8rem !important;
+}
+.react-datepicker__month-container {
+    float: none !important;
+}
+.react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header {
+    font-size: 1.4rem !important;
+}
+.react-datepicker__day-names, .react-datepicker__week {
+    display: flex !important;
+    justify-content: center !important;
+}
+.react-datepicker__day-names {
+    margin-top: 0.5rem !important;
+}
+.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name {
+    width: calc(100% / 7) !important;
+    line-height: 2.35rem !important;
+    margin: 0.1rem !important;
+    color: var(--text-color) !important;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range {
+    color: var(--primary-color) !important;
+    font-weight: 400 !important;
+    background-color: var(--primary-bg-color) !important;
+    border-radius: 100% !important;
+}
+.react-datepicker__day-name {
+    color: var(--primary-color) !important;
+}
+
+.react-datepicker__navigation {
+    top: 1.7rem !important;
+}
+
+.react-datepicker__year-read-view--down-arrow, .react-datepicker__month-read-view--down-arrow, .react-datepicker__month-year-read-view--down-arrow, .react-datepicker__navigation-icon::before {
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+    top: 0.6rem !important;
+    border-color: var(--primary-color) !important;
+    border-width: 0.1rem 0.1rem 0 0 !important;
+}
+.react-datepicker__triangle {
+    display: none !important;
+}
+
+.fc .fc-view-harness {
+    height: auto !important;
+}
+
+.fc .fc-view-harness-active > .fc-view {
+    position: relative !important;
+}

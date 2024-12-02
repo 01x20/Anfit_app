@@ -1,0 +1,11 @@
+@charset "uft-8";
+
+.class_pass_list {
+    padding: 1rem 1.6rem 6rem;
+}
+.list_wrap {
+    margin-top: 1rem;
+}
+.list_wrap > li {
+    padding-top: 1rem;
+}

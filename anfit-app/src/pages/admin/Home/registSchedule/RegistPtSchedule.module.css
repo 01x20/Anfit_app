@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.select_member_wrap {
+    display: flex;
+    gap: 1rem;
+}
+.search_member {
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 0.8rem;
+    color: var(--text-gray);
+}
+.search_member svg {
+    margin-right: 0.4rem;
+}
+.selected_member {
+    width: calc(100% - 11rem);
+}
+
+/* 검색 모달 */
+.check_list {
+    margin-top: 2rem;
+    padding-bottom: 8rem;
+    overflow-y: auto;
+    max-height: calc(100vh - 26rem);
+}

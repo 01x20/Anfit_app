@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+.common_padding {
+    padding: 0 1.6rem 0.5rem;
+}
+.padding_wrap {
+    padding: 0 1.6rem 6rem;
+}
+
+.button {
+    height: 4rem;
+    line-height: 4rem;
+    padding: 0 1.2rem;
+    border-radius: 0.8rem;
+    text-align: left;
+    border: 0.1rem solid var(--border-color);
+    flex: 1;
+}
+
+.contents_title {
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+}
+
+/* 일정 리스트 */
+.schedule_wrap {
+    margin-top: 2rem;
+}
+.list_wrap {
+    border-left: 0.2rem dashed var(--border-color);
+}
+.schedule_list {
+    position: relative;
+    padding: 1rem;
+    width:calc(100% - 2rem);
+    margin-left: 2rem;
+    background: var(--color-white);
+    border-radius: 0.8rem;
+    box-shadow: 0.3rem 0.2rem 1rem rgba(0,0,0,0.05);
+    border: 0.1rem solid var(--border-color);
+    margin-bottom: 1.2rem;
+}
+
+.schedule_list::before {
+    position: absolute;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border: 0.1rem solid var(--primary-color);
+    box-shadow: 0 0 0.5rem var(--primary-color);
+    background: var(--primary-bg-color);
+    border-radius: 100%;
+    left: -2.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.schedule_list.schedule_passed {
+    background: var(--gray-bg-color);
+}
+
+.schedule_list.schedule_passed::before {
+    box-shadow: 0 0 0.5rem var(--text-gray);
+    background: var(--gray-bg-color);
+    border-color: var(--text-gray);
+}
+
+.schedule_list.schedule_passed a {
+    color: var(--text-gray);
+}
+
+.list_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.class_time {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.list_bottom {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+}
+.class_limit {
+    display: flex;
+    align-items: center;
+}
+.icon {
+    font-size: 1.5rem;
+    margin-right: 0.4rem;
+}

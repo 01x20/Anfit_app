@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.member_list_wrap {
+    padding: 1rem 1.6rem 6rem;
+}
+
+.member_list {
+    margin-top: 2rem;
+}
+
+.member_list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-top: 0.1rem solid var(--border-color);
+}
+.member_list li:last-child {
+    border-bottom: 0.1rem solid var(--border-color);
+}
+
+.btn_more {
+    color: var(--text-gray);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.btn_more svg {
+    margin-left: 0.4rem;
+}

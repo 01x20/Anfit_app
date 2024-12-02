@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.toggle_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.toggle_wrap input {
+    display: none;
+}
+
+.toggle_btn {
+    width: 3.8rem;
+    height: 1.8rem;
+    background: var(--primary-gray);
+    border-radius: 100rem;
+    position: relative;
+}
+.toggle_btn::before {
+    position: absolute;
+    content: '';
+    width: 1.4rem;
+    height: 1.4rem;
+    background: var(--color-white);
+    border-radius: 100%;
+    right: 2.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle_wrap input:checked + .toggle_btn {
+    background: var(--primary-color);
+}
+.toggle_wrap input:checked + .toggle_btn::before {
+    right: 0.3rem;
+}

@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.form_wrap {
+    padding: 1rem 0 8rem;
+}
+.form_title {
+    margin-bottom: 0.5rem;
+}
+.form_box {
+    padding: 0 1.6rem 2rem;
+}
+.date_pick_wrap {
+    position: relative;
+}
+.date_pick_wrap input {
+    padding-left: 3.8rem;
+    width: 100%;
+}
+.date_icon {
+    position: absolute;
+    font-size: 1.6rem;
+    color: var(--gray-300);
+    left: 1.2rem;
+    top: 1.1rem;
+}
+.pick_date_time, .time_pick_wrap {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.pick_box {
+    flex: 1;
+}
+.input_wrap input {
+    width: 100%;
+}

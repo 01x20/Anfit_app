@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.button_box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.button_box .btn {
+    flex: 1 1 auto;
+}
+.blue_gradient_box {
+    background: linear-gradient(45deg, #5D9AF7, #8CE0E1);
+    position: relative;
+    z-index: 1;
+}
+.blue_gradient_box::before {
+    position: absolute;
+    content: '';
+    width: calc(100% - 0.2rem);
+    height: calc(100% - 0.2rem);
+    background-image: linear-gradient(45deg, #DDEBFD, #E3F8F8);
+    z-index: -1;
+    left: 0.1rem;
+    top: 0.1rem;
+    border-radius: 1.1rem;
+}
+
+
+.fixed_button_box {
+    padding: 1rem 1.6rem;
+    display: flex;
+    position: fixed;
+    bottom: 6rem;
+    left: 0;
+    width: 100%;
+    gap: 1rem;
+    background: rgba(255,255,255,0.3);
+}
+.fixed_button_box .btn {
+    flex: 1;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    border-radius: 1.2rem;
+    border: 0.1rem solid var(--primary-color);
+    background: var(--primary-bg-color);
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.fixed_button_box .red_btn {
+    border: 0.1rem solid var(--secondary-color);
+    background: var(--secondary-bg-color);
+    color: var(--secondary-color);
+}
+
+.button_default {
+    padding: 0 1.2rem;
+    height: 3rem;
+    line-height: 2.9rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.bg_type {
+    background: var(--primary-color);
+    color: var(--color-white);
+}
+
+.red_line {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}

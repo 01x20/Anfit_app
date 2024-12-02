@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.search_wrap {
+    display: flex;
+}
+.search_wrap input {
+    width: calc(100% - 9rem);
+}
+.search_btn {
+    width: 8rem;
+    color: var(--color-white);
+    border: 0.1rem solid var(--primary-color);
+    background: var(--primary-color);
+    border-radius: 0.8rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_btn svg {
+    margin-right: 0.4rem;
+}
